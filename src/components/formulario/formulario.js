@@ -1,12 +1,7 @@
-// formulario.js
 import React, { useState } from 'react';
 import './formulario.css'
-import IconButton from '@mui/material/IconButton';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
-import TextField from '@mui/material/TextField';
-import DeleteIcon from '@mui/icons-material/Delete';
 
-const TaskForm = ({ agregarTarea, eliminarTodasTask }) => {
+const TaskForm = ({ agregarTarea }) => {
   const [newTask, setNewTask] = useState('');
 
   const cambioEntrada = event => {
@@ -23,15 +18,13 @@ const TaskForm = ({ agregarTarea, eliminarTodasTask }) => {
 
   return (
     <form onSubmit={envio}>
-      <TextField size='small' id="outlined-basic" label="Agregar Tarea" variant="outlined" type="text" value={newTask} onChange={cambioEntrada}/>
-      <IconButton color='secondary' type="submit" aria-label="add">
-        <AddCircleIcon />
-      </IconButton>
-      <IconButton color="error" aria-label="delete" onClick={eliminarTodasTask}>
-        <DeleteIcon />
-      </IconButton>
+      <input type="text" value={newTask} onChange={cambioEntrada} />
+      <button type="submit">Agregar tarea</button>
     </form>
   );
 };
 
 export default TaskForm;
+
+
+

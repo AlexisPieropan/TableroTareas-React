@@ -1,9 +1,7 @@
 import React from 'react';
 import TaskItem from '../tareas/tareas';
-import './listTareas.css'
 
-
-const TaskList = ({ tasks, eliminar, taskComplete }) => {
+const TaskList = ({ tasks, eliminar }) => {
   return (
     <div>
       {tasks.map(task => (
@@ -11,7 +9,6 @@ const TaskList = ({ tasks, eliminar, taskComplete }) => {
           key={task.id}
           task={task}
           eliminar={eliminar}
-          taskComplete={taskComplete}
         />
       ))}
     </div>
