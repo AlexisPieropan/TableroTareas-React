@@ -7,7 +7,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /*BORRAR*/
-  background-image: URL(https://static.nationalgeographic.es/files/styles/image_3200/public/75552.ngsversion.1422285553360.jpg?w=1600&h=1067);
+  /*COLOR DE FONDO*/
+ background-color: rgba(0, 0, 0, 0.479);
+ 
 }
 
 code {
