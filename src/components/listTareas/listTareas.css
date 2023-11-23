@@ -1,0 +1,17 @@
+/*Esto es toda la pagina, todas las tareas y tambien el form*/
+
+form {
+    margin: 1vh;
+  }
+  
+  input {
+    padding: 1vh;
+  }
+  
+  button {
+    padding: 1vh;
+    margin: 1vh;
+    cursor: pointer;
+  }
+
+ 
